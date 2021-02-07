@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveloki</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+</head>
+<body>
+    <div class="c-page">
+        <header class="c-page__header">
+            <div class="c-page__logo">
+                <a href="" class="l-logo-container" href="#">
+                    <img src="/assets/logo.svg" alt="">
+                </a>
+            </div>
+            <nav class="c-page__menu">
+                <div class="c-page__gallery">
+                    <a href="" class="l-gallery-container" href="#">
+                        <img src="/assets/gallery.svg" alt="">
+                    </a>
+                </div>
+                <div class="l-navs-container">
+                    <a href="#">About</a>
+                    <a href="#">Events</a>
+                    <a href="#" class="c-page__user-login">
+                        <img src="/assets/user-image.png" alt="user-login">
+                    </a>
+                </div>
+
+            </nav>
+        </header>
+        <div class="c-page__main">
+            <div class="c-page__col-left">
+                <h1 class="c-page__motto">Pave your way to amazing stories with us</h1>
+                <p class="c-page__desc">Swing away and let yourself be amazed at the beauty of Indonesian tourism</p>
+    
+                <div class="l-left-btns-container">
+                    <a href="#scrolldown" class="c-page__explore-btn">Explore <img src="assets/arrow-right.svg" alt="arrow"></a>
+                    <a href="#" class="c-page__play-btn"> <img src="assets/play.svg" alt="play"></a>
+                </div>
+            </div>
+            <div class="c-page__col-right">
+                <div class="c-page__search">
+                    <img src="/assets/search.svg" alt="search-icon"><input type="text">
+                </div>
+                <div class="c-page__destinations">
+                    <h2 class="c-page__title">Destinations</h2>
+                    <ul class="c-page__options">
+                        <li class="l-option-container"><a href="#" class="c-page__option">Popular</a></li>
+                        <li class="l-option-container"><a href="#" class="c-page__option">Recomended</a></li>
+                        <li class="l-option-container"><a href="#" class="c-page__option">All</a></li>
+                    </ul>
+                    <div class="c-page__carousel">
+                        <div class="glide">
+                            <div data-glide-el="track" class="glide__track">
+                                <div class="glide__slides">
+                                    <div class="c-page__item" data-gslide="0" style="height: auto; width: 202.8px;">
+                                        <img src="assets/borobudur.jpg" alt="Borobudur Temple image ">
+                                        <div class="c-page__content">
+                                            <h3>Borobudur Temple</h3>
+                                            <p><img src="assets/place.svg" alt="place">Magelang , Central Java</p>
+                                        </div>
+                                    </div>
+                                    <div class="c-page__item" data-gslide="2" style="height: auto; width: 202.8px;">
+                                        <img src="assets/kuta.jpg" alt="Komodo National Park image ">
+                                        <div class="c-page__content">
+                                            <h3>Komodo National Park</h3>
+                                            <p><img src="assets/place.svg" alt="place">Komodo Island, NTT</p>
+        
+                                        </div>
+                                    </div>
+                                    <div class="c-page__item active" data-gslide="3" style="height: auto; width: 202.8px;">
+                                        <img src="assets/kelimutu.jpg" alt="Kelimutu Lake image ">
+                                        <div class="c-page__content">
+                                            <h3>Kelimutu Lake</h3>
+                                            <p><img src="assets/place.svg" alt="place">Woloara, Nusa Tenggara</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-page__categories">
+                    <h2 class="c-page__title">Popular Categories</h2>
+                    <ul class="l-categories-container">
+                        <li class="c-page__category">
+                            <p>Flight</p>   
+                            <a href="#" class="c-page__category-item">
+                                <img src="assets/flight.svg" alt="flight">
+                            </a>    
+                        </li>
+                        <li class="c-page__category">
+                            <p>Train</p>
+                            <a href="#" class="c-page__category-item">
+                                <img src="assets/train.svg" alt="Train">
+                            </a>    
+                        </li>
+                        <li class="c-page__category">
+                            <p>Bus</p>
+    
+                            <a href="#" class="c-page__category-item">
+                                <img src="assets/bus.svg" alt="Bus">
+                            </a>    
+                        </li>
+                        <li class="c-page__category">
+                            <p>Hotels</p>
+    
+                            <a href="#" class="c-page__category-item">
+                                <img src="assets/hotel.svg" alt="Hotels">
+                            </a>    
+                        </li>
+                        <li class="c-page__category">
+                            <p>Shopping</p>    
+                            <a href="#" class="c-page__category-item">
+                                <img src="assets/shopping.svg" alt="Shopping">
+                            </a>    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script>
+    new Glide('.glide',{
+        type: 'carousel',
+        startAt: 0,
+        perView: 2.5,
+        breakpoints : {
+            468: {
+                perView: 1.95,
+                // focusAt: 'center',
+            }
+        }
+}).mount()
+</script>
+</html>
